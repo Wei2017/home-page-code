@@ -1,9 +1,14 @@
 <template>
-  <div class="container">
-    <img src="@img/bj.jpg" alt="" class="index-bj">
-    <index-header :browserType="browserType"></index-header>
-    <alert-component :alertInfo="alertInfo" @hide="handleHideAlert"></alert-component>
+  <div>
+    <keep-alive>
+      <div class="container">
+        <img src="@img/bj.jpg" alt="" class="index-bj">
+        <index-header :browserType="browserType"></index-header>
+        <alert-component :alertInfo="alertInfo" @hide="handleHideAlert"></alert-component>
+      </div>
+    </keep-alive>
   </div>
+  
 </template>
 
 <script>
