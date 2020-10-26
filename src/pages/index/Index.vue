@@ -51,6 +51,7 @@ export default {
       } else {
           this.browserType = 1
       }
+      console.log('test')
     },
   },
   mounted () {
